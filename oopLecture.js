@@ -18,7 +18,7 @@ document.write(customer.speak()+"<br />")
 document.write(customer.name+" lives at "+customer.address.street+"<br />")
 
 
-customer.address.country="US";
+customer.country="US";
 document.write(customer.address.country+"<br />")
 // adding properties
 
@@ -48,7 +48,7 @@ var person1= new Person("Paul","123 Main");
 var person2= new Person("Paul","123 Main");
 // object type check at Bob is a person, checking if it is part of Person Object
 document.write("Are they equal "+(person1===person2)+ "<br />")
-document.write(" Property of country: "+ customer.hasOwnProperty("address")+"<br />")
+document.write(" Property of country: "+ customer.hasOwnProperty("country")+"<br />")
 
 // objects are only going to be equal if they reference the exact same object
 // doesn't mean that they'll be equal if they contain the same data
